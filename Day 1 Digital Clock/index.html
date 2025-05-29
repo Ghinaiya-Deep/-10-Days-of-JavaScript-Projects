@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📅 Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="clock-container" tabindex="0" aria-label="Digital Clock showing current time and date">
+    <div class="datetime">
+      <div id="time" aria-live="polite" aria-atomic="true">--:--:--</div>
+      <div id="date"></div>
+    </div>
+    <div class="format-toggle">
+      <label for="toggleFormat">
+        <input type="checkbox" id="toggleFormat" />
+        24-Hour Format
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
