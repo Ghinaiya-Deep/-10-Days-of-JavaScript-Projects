@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎲 Dice Roller</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>🎲 Dice Roller</h1>
+
+    <section class="dice-section" aria-live="polite" aria-atomic="true" aria-relevant="additions">
+      <div id="dice" class="dice" aria-label="Dice showing number 1">🎲</div>
+      <button id="rollBtn" aria-describedby="rollHelp" aria-controls="history" type="button">Roll Dice</button>
+      <p id="rollHelp" class="visually-hidden">Click to roll the dice. The result will be displayed above.</p>
+    </section>
+
+    <section class="history-section" aria-label="Roll History">
+      <h2>Roll History</h2>
+      <ul id="history" class="history-list" aria-live="polite" aria-relevant="additions"></ul>
+      <button id="clearHistoryBtn" type="button" aria-label="Clear roll history">Clear History</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
